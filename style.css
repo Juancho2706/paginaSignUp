@@ -27,11 +27,14 @@ body{
     justify-content: space-between;
     color: white;
 }
-.frase1{
-    font-size: 18px;
+.dosA>div{
     top: 140px;
     position: relative;
     left: 20px;
+}
+.frase1{
+    font-size: 18px;
+    
     letter-spacing: 0.001em;
 }
 .dos{
@@ -111,11 +114,26 @@ cursor: pointer;
 text-transform: lowercase;
 }
 
-.botoncito:hover{
+.botoncito.ready:hover{
 
 transition : 197ms;
 padding: 10px 44px;
 transform : translateY(-0px);
 color: #000000;
 border: solid 2px #000000;
+}
+.botoncito:disabled{
+    color: rgb(0, 0, 0);
+background: rgba(63, 63, 63, 0.52);
+}
+.dosC>div{
+    position:relative;
+    top: 50px;
+    left: 30px;
+}
+a{
+    color: green;
+}
+.titulo>span>img{
+    height: 90px;
 }

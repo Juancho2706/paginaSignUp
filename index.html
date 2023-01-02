@@ -10,13 +10,15 @@
 <body>
     <div class="uno">
         <div class="titulo">
-            <span>ODIN</span>
+            <span><img src="../paginaSignUp/Images/odin.png" alt="">ODIN</span>
         </div>
         <footer>Photo by Halie West on Unsplash</footer>
     </div>
     <div class="dos">
         <div class="dosA">
-            <span class="frase1"></span>
+            <div>
+                <span class="frase1"></span>
+            </div>
         </div>
         <div class="dosB">
             <div>Let's do this!</div>
@@ -28,17 +30,17 @@
                             <label for="first_name">FIRST NAME</label>
                             <div>
                                 
-                                <input type="text" id="first_name" name="first_name" placeholder="Your name here..." pattern="^\b\w+\b" title="Please put your 1st name" required>
+                                <input type="text" id="first_name" name="first_name" placeholder="Your name here..." pattern="^[a-zA-Z]+$" title="Please put your First name" required>
                             </div>
                             <label for="correo">EMAIL</label>
                             <div>
                                 
-                                <input type="email" id="correo" name="correo" required>
+                                <input type="email" id="correo" name="correo" placeholder="example@mail.com" required>
                             </div>
                             <label for="contrasena">PASSWORD</label>
                             <div>
                                 
-                                <input type="password" id="contrasena" name="contrasena" required></input>
+                                <input type="password" id="contrasena" name="contrasena"  minlength="8" maxlength="10" pattern="\d{8,10}" title="Numbers only, 8 - 10 characters" required></input>
                             </div>
                         
                     </div>
@@ -47,24 +49,26 @@
                             <label for="last_name">LAST NAME</label>
                             <div>
                                 
-                                <input type="text" id="last_name" name="last_name" required>
+                                <input type="text" id="last_name" name="last_name" placeholder="Your middle name here..." pattern="^[a-zA-Z]+$" title="Please put your Middle name" required>
                             </div>
                             <label for="celu">PHONE NUMBER</label>
                             <div>
                                 
-                                <input type="text" id="celu" name="celu" required>
+                                <input type="text" id="celu" name="celu" pattern="\d{7,10}\S[^a-z]" minlength="7" maxlength="10" title="Phone number 8-10 digits" placeholder="555555555" title="Phone number 8-10 digits" required>
                             </div>
-                            <label for="contrasenaCON">PASSWORD</label>
+                            <label for="contrasenaCON">PASSWORD CONFIRM</label>
                             <div>
                                 
-                                <input type="password" id="contrasenaCON" name="contrasenaCON" required></input>
+                                <input type="password" id="contrasenaCON" name="contrasenaCON" minlength="8" maxlength="10" pattern="\d{8,10}" title="Numbers only, 8 - 10 characters" required></input>
                             </div>
                         
                     </div>
                 </form>
             </div>
         </div>
-        <div class="dosC"></div>
+        <div class="dosC">
+            <div><span>Already have an account?<a href="#">Log In</a>.</span></div>
+        </div>
     </div>
 
 </body>
