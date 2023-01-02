@@ -1,11 +1,22 @@
+@font-face {
+    font-family: "Elfondobase";
+    src: url("../Fonts/Inter.ttf");
+}
+@font-face {
+    font-family: "Elfondoodin";
+    src: url("../paginaSignUp/Fonts/Norse.otf") format("opentype");
+}
 body{
     display: flex;
     margin: 0;
     margin-inline: 175px;
     background: black;
+    justify-content: center;
+    font-family: 'Elfondobase', Courier, monospace;
 }
-
 .uno{
+    min-width: 470px;
+    max-width: 470px;
     width: 50%;
     background-image: url(../paginaSignUp/Images/planta.jpg);
     background-size: cover;
@@ -16,9 +27,20 @@ body{
     justify-content: space-between;
     color: white;
 }
+.frase1{
+    font-size: 18px;
+    top: 140px;
+    position: relative;
+    left: 20px;
+    letter-spacing: 0.001em;
+}
 .dos{
+    min-width: 800px;
+    max-width: 800px;
     width: 50%;
     background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
 }
 .titulo{
     position: relative;
@@ -28,8 +50,72 @@ body{
     display: flex;
     top: 140px;
     font-size: 120px;
+    font-family: 'Elfondoodin', Courier, monospace;
+
 }
 footer{
     bottom: 10px;
     position: relative;
+}
+.dosB{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    gap: 20px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.14);
+}
+.dosA{
+    font-weight: bolder;
+}
+#form1{
+    display: flex;
+    max-width: 470px;
+    gap: 40px;
+}
+.dosA, .dosB, .dosC{
+    height: 33%;
+}
+input{
+  outline: none;
+}
+input:valid{
+    border-color: rgba(56, 242, 83, 0.34);
+}
+input:user-invalid{
+    border-color: red;
+}
+input:focus{
+    border-color: blue;
+}
+
+.botoncito{
+position: relative;
+top: 30px;
+left: 30px;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background: rgba(25, 81, 25, 0.52);
+padding: 10px 30px;
+border: solid #000000 2px;
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+border-radius: 50px;
+transition : 197ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+text-transform: lowercase;
+}
+
+.botoncito:hover{
+
+transition : 197ms;
+padding: 10px 44px;
+transform : translateY(-0px);
+color: #000000;
+border: solid 2px #000000;
 }

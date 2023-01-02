@@ -1,7 +1,17 @@
 const $frase1 = document.querySelector('.frase1');
+$frase1.innerHTML = `This is not a real online service! You know you need something<br>
+like this in your life to help you realize your deepest dreams.<br>
+Sing up <i>now</i> to get started.<br>
+<br>
+You <i>know</i> you want to`;
 
-$frase1.innerText = `This is not a real online service! You know you need something
-like this in your life to help you realize your deepest dreams.
-Sing up now to get started.
+const x = document.getElementById("form1").id;
 
-You know you want to`;
+
+const $dosC = document.querySelector('.dosC');
+const botoncito = document.createElement('button');
+botoncito.type = "submit";
+botoncito.setAttribute("form", x);
+botoncito.innerText = 'Create Account'
+botoncito.classList.add('botoncito');
+$dosC.append(botoncito);
